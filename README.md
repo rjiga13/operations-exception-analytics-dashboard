@@ -2,6 +2,10 @@
 
 A manager-facing Streamlit dashboard for monitoring workflow quality, queue health, SLA exceptions, backlog aging, escalation trends, and bottleneck signals using synthetic operations data.
 
+## Screenshot
+
+![Dashboard overview](screenshots/dashboard-overview.png)
+
 ## Problem
 
 Service teams often need to understand where work is slowing down before missed SLAs and unresolved exceptions become visible to customers. Raw queue exports can show activity, but they rarely explain which teams need attention or what action should happen next.
