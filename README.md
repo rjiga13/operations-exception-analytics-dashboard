@@ -1,29 +1,29 @@
-# AI Risk Controls Monitoring Dashboard
+# Operations Exception Analytics Dashboard
 
-A business-facing Streamlit dashboard that monitors operational and model-risk control indicators for a fictional financial-services workflow. The project is designed to show how analytics leaders can turn control data into practical executive decision support.
+A manager-facing Streamlit dashboard for monitoring workflow quality, queue health, SLA exceptions, backlog aging, escalation trends, and bottleneck signals using synthetic operations data.
 
 ## Problem
 
-Risk and operations leaders often receive exception data after issues have already escalated. This dashboard simulates a control-monitoring workflow that helps teams see exception trends, unresolved issues, ownership concentration, and emerging anomaly patterns earlier.
+Service teams often need to understand where work is slowing down before missed SLAs and unresolved exceptions become visible to customers. Raw queue exports can show activity, but they rarely explain which teams need attention or what action should happen next.
 
 ## Solution
 
-The app generates synthetic control events, model outputs, business-unit metadata, and owner assignments. It then summarizes KPI movement, flags threshold breaches, highlights aging exceptions, and produces an executive summary with recommended actions.
+The app generates synthetic workflow events across teams, owners, queue stages, severity levels, SLA outcomes, and aging. It summarizes KPI movement, flags unusual exception patterns, highlights aging backlog, and produces a short executive summary with recommended manager actions.
 
 ## Core Features
 
-- Synthetic dataset generator for control events, exceptions, model outputs, and business-unit metadata
-- KPI dashboard for exception rate, critical issues, unresolved breaches, aging, and owner breakdown
-- Threshold and isolation-forest anomaly detection for unusual control activity
-- Severity trends and business-unit views for prioritization
+- Synthetic dataset generator for workflow events, SLA exceptions, owners, teams, queue stages, and aging
+- KPI dashboard for exception rate, open critical issues, backlog aging, escalation rates, and bottleneck flags
+- Threshold and isolation-forest anomaly detection for unusual queue activity
+- Severity trends and team views for prioritization
 - Executive summary that explains what changed, why it matters, and recommended actions
 
 ## Business Value
 
-- Helps leaders identify deteriorating controls before they become audit or operational issues
-- Makes risk ownership visible across business units and control owners
-- Connects analytics output to management actions instead of stopping at charts
-- Demonstrates AI/data product thinking, governance awareness, and practical ML familiarity
+- Helps managers identify workflow quality issues before service levels deteriorate
+- Makes exception ownership and queue bottlenecks visible across teams
+- Connects analytics output to practical prioritization and follow-up actions
+- Demonstrates analytics product thinking, operational leadership, and practical ML familiarity
 
 ## Tech Stack
 
@@ -50,4 +50,4 @@ streamlit run app.py
 
 ## Notes
 
-All data is synthetic and fictional. The dashboard is intended as a portfolio project, not a production risk-management system.
+All data is synthetic and fictional. This project is a general portfolio demo and is not based on any real company system, confidential workflow, or non-public process.
